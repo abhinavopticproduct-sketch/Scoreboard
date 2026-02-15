@@ -10,12 +10,16 @@
   <link rel="stylesheet" href="/Scoreboard/assets/index-0f539145.css">
 </head>
 
-<body>
+<body style="background-color: #222; margin: 0;">
+  <script>
+    console.log("DEBUG: index.html loaded");
+    window.onload = () => console.log("DEBUG: window loaded");
+  </script>
   <div id="root">
-    <div
-      style="background: #222; color: #00ff00; font-family: sans-serif; text-align: center; padding: 50px; height: 100vh;">
+    <div style="color: #00ff00; font-family: sans-serif; text-align: center; padding-top: 50px;">
       <h1>Loading Cricket Scoreboard...</h1>
-      <p>If this stays for more than 5 seconds, something is wrong.</p>
+      <p>Version: Debug 3.0</p>
+      <p>If you see this, HTML is working.</p>
     </div>
   </div>
   
