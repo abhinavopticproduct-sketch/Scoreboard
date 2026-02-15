@@ -1,0 +1,79 @@
+:root {
+    --bg-dark: #0f172a;
+    --glass-bg: rgba(30, 41, 59, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --neon-green: #00ff9d;
+    --neon-blue: #00f2ff;
+    --neon-pink: #ff0055;
+    --neon-yellow: #facc15;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --font-sports: 'Rajdhani', 'Inter', sans-serif;
+    /* You might need to import a google font if you want this exact look, but Inter works */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: var(--font-sports);
+    background: radial-gradient(circle at top right, #1e1b4b, #0f172a);
+    color: var(--text-primary);
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    /* Mobile focused */
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Utilities */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-neon-green {
+    color: var(--neon-green);
+    text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+}
+
+.text-neon-blue {
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+}
+
+.text-neon-pink {
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px rgba(255, 0, 85, 0.5);
+}
+
+.label {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.value {
+    font-weight: 600;
+    font-size: 1rem;
+}
